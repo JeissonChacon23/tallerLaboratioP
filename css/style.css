@@ -1,0 +1,169 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Ejercicio 1: Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: steelblue;
+    padding: 20px;
+    gap: 10px;
+}
+
+.flex-item {
+    width: 80px;
+    height: 80px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.flex-item.big {
+    width: 120px;
+    height: 120px;
+    background: darkgray;
+}
+
+/* Ejercicio 2: Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.item1 { background: yellow; }
+.item2 { background: green; }
+.item3 { background: red; }
+.item4 { background: pink; }
+.item5 { background: blue; }
+.item6 { background: black; }
+.item7 { background: purple; }
+.item8 { background: peru; }
+.item9 { background: aquamarine; }
+
+
+/* Ejercicio 1: Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: steelblue;
+    padding: 20px;
+    gap: 10px;
+}
+
+.flex-item {
+    width: 80px;
+    height: 80px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Solo los extremos serán más grandes */
+.flex-item:first-child,
+.flex-item:last-child {
+    width: 120px;
+    height: 120px;
+    background: darkgray;
+}
+
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: steelblue;
+    padding: 20px;
+    gap: 10px;
+}
+
+.flex-item {
+    width: 80px;
+    height: 80px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Extremos más grandes */
+.flex-item.big {
+    width: 120px;
+    height: 120px;
+    background: darkgray;
+}
+
+/* Item 3 más pequeño */
+.flex-item.small {
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    background: lightgray;
+}
